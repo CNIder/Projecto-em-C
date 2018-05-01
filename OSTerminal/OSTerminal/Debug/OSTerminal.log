@@ -1,0 +1,15 @@
+﻿Build started 20/03/2018 22:11:09.
+     1>Project "C:\Users\Utilizador\Documents\Visual Studio 2013\Projects\Projecto em C\OSTerminal\OSTerminal\OSTerminal.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Utilizador\Documents\bgi /I"C:\Program Files\MySQL\MySQL Connector C 6.1\lib" /I"C:\Program Files\MySQL\MySQL Connector C 6.1\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\utilizador\documents\bgi\graphics.h(281): warning C4273: 'getch' : inconsistent dll linkage
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : see previous definition of 'getch'
+     1>c:\users\utilizador\documents\bgi\graphics.h(282): warning C4273: 'kbhit' : inconsistent dll linkage
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(133) : see previous definition of 'kbhit'
+     1>c:\users\utilizador\documents\visual studio 2013\projects\projecto em c\osterminal\osterminal\source.cpp(14): fatal error C1083: Cannot open include file: 'sys/utsname.h': No such file or directory
+     1>Done Building Project "C:\Users\Utilizador\Documents\Visual Studio 2013\Projects\Projecto em C\OSTerminal\OSTerminal\OSTerminal.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.48

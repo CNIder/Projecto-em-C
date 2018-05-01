@@ -1,0 +1,98 @@
+#include <stdio.h>
+#include <cstdlib>
+
+
+void menu();
+
+void SubmenuRetangulo(void);
+void submenuTriangulo(void);
+void regis();
+void os();
+void bios();
+void cmd();
+int boot = 100;
+struct user{
+	char username[50];
+	char password[50];
+
+}user2;
+struct bios{
+	int Version = 124929429;
+	char BiosName[20];
+	int BIOSBOOT = 33233;
+
+}bios2;
+void menu(){
+	printf_s("Booting.....");
+	for (int i = 0; i < boot; i++){
+		printf_s("Progress:%d\n", i);
+	}
+	int opcao;
+	printf_s("Press 1 to Operative System\n");
+	scanf_s("%d", &opcao);
+	switch (opcao){
+	case 1:
+		regis();
+		break;
+	}
+		
+	
+	
+
+
+}
+void regis(){
+	printf("\nHello\n");
+	printf("Please Create an Account\n");
+	printf("Username:");
+	fflush(stdin);
+	gets_s(user2.username);
+		printf("Password:");
+		fflush(stdin);
+		gets_s(user2.password);
+	
+
+	for (int i = 0; i < 1; i++){
+		printf("\nWelcome:");
+		printf_s("\n%s", user2.username);
+		printf_s("\n%s\n", user2.password);
+		printf_s("*******************");
+		os();
+	}
+}
+void os(){
+	int opcao2 = 0;
+	printf("\nMenu\n");
+	printf("12121........cmd\n");
+	scanf_s("%d", &opcao2);
+	switch (opcao2){
+	case 12121:
+		cmd();
+		break;
+	default:
+		printf_s("Wrong input || Inexistent Comand || Please try again\n");
+		os();
+		break;
+	}
+
+}
+
+
+void cmd(){
+	char oper;
+	printf("Computer:%d\n", bios2.BIOSBOOT);
+	scanf_s("%c", &oper);
+	switch (oper){
+	case 'd':
+		printf_s("oa");
+	}
+}
+int main(void){
+
+
+	menu();
+	fflush(stdin);
+	getchar();
+
+
+}
